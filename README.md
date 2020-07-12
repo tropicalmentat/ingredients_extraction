@@ -9,3 +9,5 @@ The following steps to retrieve ingredients are:
 - Plural nuns were converted to singular nouns
 - If remaining ingredient had more than 2 words, only keep the last two words
 
+References
+- https://www.frontiersin.org/articles/10.3389/fict.2017.00014/full
