@@ -1,0 +1,4 @@
+__pycache__
+rcp_ext/
+data/
+*.sublime-workspace
