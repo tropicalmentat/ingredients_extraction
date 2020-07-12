@@ -1,9 +1,17 @@
 import sys
 import nltk
+from nltk.corpus.reader.plaintext import PlaintextCorpusReader
 
-data = r'data/sample.txt'
+data_fpath = r'data/sample.txt'
+corpus_fpath = r'data/corpora.txt'
 
-with open(data,"r") as f:
+nltk.data.load(corpus_fpath,format='raw')
+
+corpus = PlaintextCorpusReader(corpus_fpath,".*",encoding='latin1')
+
+print(corpus)
+
+with open(data_fpath,"r") as f:
 	for ln in f:
 		token = nltk.word_tokenize(ln)
 		pos = nltk.pos_tag(token)
