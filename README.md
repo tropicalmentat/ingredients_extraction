@@ -1,4 +1,4 @@
-Project to recreate extraction ingredients from Filipino recipes.
+Project to rextract ingredients from Filipino recipes.
 
 Inspired from the following project: https://sites.northwestern.edu/msia/2019/05/21/chocolate-chips-and-fish-sauce-a-network-analysis-and-visualization-in-ingredient-pairings/
 
