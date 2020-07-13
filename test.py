@@ -1,21 +1,24 @@
-import sys
 import nltk
-from nltk.corpus.reader.plaintext import PlaintextCorpusReader
+from nltk.corpus import stopwords
 
 data_fpath = r'data/sample.txt'
 corpus_fpath = r'data/corpora.txt'
 
-nltk.data.load(corpus_fpath,format='raw')
+with open(corpus_fpath,"r") as stop:
 
-corpus = PlaintextCorpusReader(corpus_fpath,".*",encoding='latin1')
+	cook_stop = [wd.strip('\n') for wd in stop.readlines()]
 
-print(corpus)
 
-with open(data_fpath,"r") as f:
-	for ln in f:
+with open(data_fpath,"r") as rcp:
+	for ln in rcp:
 		token = nltk.word_tokenize(ln)
-		pos = nltk.pos_tag(token)
+
+		filtered = [wd for wd in token if wd not in cook_stop]
+
+		pos = nltk.pos_tag(filtered)
 
 		nouns = [wd[0] for wd in pos if wd[1]=="NN" or wd[1]=="NNS"]
-
+		
 		print(nouns)
+
+		# TODO: handle fractions by filtering them out
