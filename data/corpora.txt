@@ -115,6 +115,7 @@ pinch
 pint
 pixel
 pound
+pounds
 quadrant
 quantity
 quart
