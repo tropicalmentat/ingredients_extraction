@@ -1,4 +1,12 @@
-Project to rextract ingredients from Filipino recipes.
+# Recipe ingredient extractions
+
+The objective is to create a data collection service that the user can use to copy and paste text of the recipe to extract the ingredients from the text. 
+
+## Front-end and API for user interaction
+
+The service will consist of a simple front-end where the use can copy and paste the recipe name, ingredients and source website and send the text to an API for processing. The API will then return the processed text to the user.
+
+## Extracting the ingredients
 
 Inspired from the following project: https://sites.northwestern.edu/msia/2019/05/21/chocolate-chips-and-fish-sauce-a-network-analysis-and-visualization-in-ingredient-pairings/
 
