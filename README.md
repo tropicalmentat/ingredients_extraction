@@ -2,6 +2,8 @@
 
 The objective is to create a data collection service that the user can use to copy and paste text of the recipe to extract the ingredients from the text. 
 
+![sequence diagram](/docs/sequence_diagram.png)
+
 ## Front-end and API for user interaction
 
 The service will consist of a simple front-end where the use can copy and paste the recipe name, ingredients and source website and send the text to an API for processing. The API will then return the processed text to the user.
