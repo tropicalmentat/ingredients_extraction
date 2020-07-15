@@ -1,4 +1,4 @@
-# Recipe ingredient extractions
+# Recipe ingredient extraction
 
 The objective is to create a data collection service that the user can use to copy and paste text of the recipe to extract the ingredients from the text. 
 
