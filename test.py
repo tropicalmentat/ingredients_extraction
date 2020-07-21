@@ -15,7 +15,7 @@ def fraction(word):
 
 if __name__=="__main__":
 
-	data_fpath = r'data/lumpia_mollica.txt'
+	data_fpath = r'data/sample.txt'
 	corpus_fpath = r'data/corpora.txt'
 
 	with open(corpus_fpath,"r") as stop:
@@ -34,9 +34,11 @@ if __name__=="__main__":
 
 			pos = nltk.pos_tag(filtered)
 
-			print(pos)
+			# print(pos)
 
 			nouns = [wd[0] for wd in pos if wd[1]=="NN" or wd[1]=="NNS"]
+
+			print(' '.join(nouns))
 			
 			# TODO: handle different kinds of milk (sweetened condensed, evaporated)
 			# by splitting ingredients parsing into 2 stages

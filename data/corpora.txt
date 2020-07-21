@@ -132,6 +132,8 @@ sheaf
 skein
 smidgen
 smoot
+slice
+slices
 spoon
 spoonful
 square

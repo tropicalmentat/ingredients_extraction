@@ -21,3 +21,7 @@ The following steps to retrieve ingredients are:
 
 References
 - https://www.frontiersin.org/articles/10.3389/fict.2017.00014/full
+
+### TODOs
+- Probably need to convert the NLP logic to client JS code
+- Begin writing API
